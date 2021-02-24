@@ -1,0 +1,12 @@
+<p>recipe works!</p>
+Ingredients:
+<ul>
+  <li *ngFor="let ingredient of ingredients">
+    <app-ingredient [name]="ingredient"></app-ingredient>
+  </li>
+</ul>
+
+<p>
+  recipe for {{name}},
+  added on {{dateAdded | date: 'longDate'}}
+</p>
