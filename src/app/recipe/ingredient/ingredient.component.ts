@@ -7,10 +7,9 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class IngredientComponent implements OnInit {
 
-  @Input() name: string = 'biatch';
+  @Input() name: string;
 
   constructor() {
-    console.log("biatch");
   }
 
   ngOnInit(): void {
